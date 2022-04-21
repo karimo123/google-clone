@@ -1,0 +1,142 @@
+.searchPage__logo{
+    object-fit: contain;
+    height: 50px;
+    margin-right: 50px;
+}
+
+
+
+.searchPage__header{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    z-index: 100;
+    align-items: flex-start;
+    padding: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.searchPage__headerBody > .search > .search__input{
+    margin-top: 0;
+    width: unset;
+    margin: unset;
+    max-width: unset;
+}
+
+.searchPage__options{
+    display: flex;
+    align-items: center;
+    color: grey;
+
+}
+
+.searchPage__option{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+.searchPage__optionsRight a,
+.searchPage__options a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+.searchPage__optionsRight,
+.searchPage__optionsLeft{
+    display: flex;
+}
+
+.searchPage__optionsRight{
+    margin-left: 80px;
+}
+
+.searchPage__option a{
+    margin-left: 5px;
+}
+
+.searchPage_resultCount{
+    color: #70757a;
+    font-size: 14px;
+}
+
+.searchPage__result{
+    margin: 40px 0;
+}
+
+.searchPage__results{
+    max-width: 650px;
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-bottom: 100px;
+}
+
+.searchPage__resultImage{
+    object-fit: contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+
+}
+
+.searchPage__resultTitle{
+    text-decoration: none;
+}
+
+.searchPage__resultTitle:hover{
+    text-decoration: underline;
+}
+
+.searchPage__resultTitle > h2{
+    font-weight: 500;
+}
+
+.searchPage__resultSnippet{
+    margin-top: 10px;
+}
+.item__link{
+    display: flex;
+    align-items: center;
+}
+
+
+@media(max-width:682px){
+    .searchPage__results{
+        margin-left: 5px;
+    }
+   
+}
+
+@media(max-width:450px){
+    .searchPage__results{
+        margin-left: 5px;
+    }
+    .searchPage__header{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .searchPage__logo{
+        object-fit: contain;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    .searchPage__headerBody > .search >.search__input > .micIcon{
+        display: none;
+    }
+    .searchPage__headerBody > .search >.search__input{
+        max-width: 300px;
+        margin-bottom: -40px;
+    }
+    .searchPage__headerBody > .search >.search__input > .input{
+        width: 100%
+    }
+
+    .searchPage__options{
+        display: none;
+    }
+}
+
